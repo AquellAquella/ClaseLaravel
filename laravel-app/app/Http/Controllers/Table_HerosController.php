@@ -15,10 +15,6 @@ class Table_HerosController extends Controller
         //Consultas precargadas: select * from table_heros
         $superheros = table_heros::all();
 
-        //Consultas precargadas: select * from table_heros where
-        // -> get() en todo el resto de query fuera de all()
-        $men = table_heros::where('gender','=','Male')->get();
-
         return view('superheros', compact('page_title','superheros'));
     }
 
@@ -33,6 +29,7 @@ class Table_HerosController extends Controller
     public function index_man () {
         $page_title = "Super Heroes - Only Male Members";
 
+        //Consultas precargadas: select * from table_heros where
         // -> get() en todo el resto de query fuera de all()
         $men = table_heros::where('gender','=','Male')->get();
 

@@ -50,5 +50,14 @@
     <a href="{{route('welcome')}}" color="blue">Go to welcome page</a>
     <br>
     <a href="{{route('example')}}" color="blue">Go to example page</a>
+
+    <!-- Highlighted second option of the menu -->
+    <br><br>
+    <h2><i><b>Navigation Menú to Different Screens of Superheros</b></i></h2>
+    <a href="{{route('heros')}}"><u>Go to all superheros page</u></a>
+    <br>
+    <a href="{{route('heros_women')}}"><u><mark>Go to only female superheros page</mark></u></a>
+    <br>
+    <a href="{{route('heros_men')}}"><u>Go to only male superheros page</u></a>
 </body>
 </html>
